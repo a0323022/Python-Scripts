@@ -26,9 +26,7 @@ for line in file_b:
 #opens File 1
 reader = csv.reader(file_a)
 data_a = csv.reader(file_a, delimiter=',') #reads csv into a list of lists
-for line in file_a:
-    list_a = 
-print(data_a)
+
 
 '''
 #opens File 2
