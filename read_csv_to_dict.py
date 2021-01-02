@@ -24,9 +24,13 @@ for line in file_b:
 '''
 
 #opens File 1
-    reader = csv.reader(f)
-    data_a = list(list(rec) for rec in csv.reader(f, delimiter=',')) #reads csv into a list of lists
-    
+reader = csv.reader(file_a)
+data_a = csv.reader(file_a, delimiter=',') #reads csv into a list of lists
+for line in file_a:
+    list_a = 
+print(data_a)
+
+'''
 #opens File 2
 with open('bpan01.csv', 'r') as f:
     reader = csv.reader(f)
@@ -38,7 +42,7 @@ with open('bpan01.csv', 'r') as f:
             if data_a[i]in data_b[j]:
                 print(data_a[i], data_b[j], "found one!")
 '''
-
+'''
 with open('apan01.csv', newline='') as csvfile:
    list = csv.reader(csvfile, delimiter=',')
    for row in list:
@@ -49,14 +53,12 @@ for i in range(len(data)):
     print data[i][0] #this alone will print all the computer names
     for j in range(len(data[i])) #Trying to run another for loop to print the usernames
         print data[i][j]
-#
+'''
 # update indices, then search through lines of b or a.
 
 
 
 #f.close() #close the csv
-
-'''
 
 
 

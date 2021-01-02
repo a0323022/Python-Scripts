@@ -60,13 +60,24 @@ with open(input_file2, 'r') as t2, open(output_path, 'w') as outFile:
 '''
 
 file_a = open("apan01.csv","r")
+file_b = open("bpan01.csv","r")
 
+'''
 dict_a = {}
+dict_b = {}
 
-for line in file_a:
+for line_a in file_a:
+    line_a.strip()
+    dict_a[(line_a.split(","))[0]] = line_a
+    for line_b in file_b:
+        line_b.strip()
+        dict_b[(line_b.split(","))[0]] = line_b
 
-    line.strip()
+        print(dict_a[dict.keys])
+        if dict_a.keys in dict_b:
+            print(line_a, "Found one!", line_b)
+'''
 
-    dict_a[(line.split(","))[0]] = line
 
 file_a.close()
+file_b.close()
